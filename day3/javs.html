@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script.src="javas.js"></script>
+</head>
+<body>
+    <div></div>
+    
+</body>
+<script>
+    let car = {
+        carname : "Swifty Car",
+        carcolor : "blue",
+        carprice : "456777"
+    }
+    console.log(" I bought ",car.carname)
+    console.log("My car color is ",car.carcolor)
+    console.log("My car price is ",car.carprice)
+    for (let c in car) {
+        console.log(car[c])
+    }
+    document.write(car.carname)
+    let name = "let us learn about javascript"
+    let n = name.slice(3,10)
+    let m = name.substring(1,10)
+    let m2 = name.substr(5,10)
+    document.write(name.length)
+    document.write(m)
+    document.write(m2)
+    document.write(n)
+    var sname = new Array()
+
+    sname[0] = "priya"
+    sname[1] = "saran"
+    sname[2] = "snek"
+    document.write(sname)
+    var emp = new Array("priya", "saran", "snek")
+    var beau = ["here", "am", "soon","smile"]
+    document.write(beau.sort())
+    document.write(sname, beau)
+    function myarray(){
+        var rname = new Array()
+        rname[0] = "priya"
+        rname[1] = "saran"
+        rname[2] = "snek"
+        document.write(sname)
+    }
+    myarray()
+    let myfunc = () => {
+        var rname = new Array()
+        rnam[0] = "pri"
+        rnam[1] = "sar"
+        rnam[2] = "sne"
+        return rname
+    }
+//day3
+    myfunc()
+    console.log(" I bought ",car.carname,"My car color is ",car.carcolor,"My car price is ",car.carprice)
+    console.log(`I bought ${carname} My car color is ${car.carcolor} My car price is ${car.carprice}`)
+    if(nam1==nam2){console.log("yes")}
+    else{console.log("no")}
+    nam1 == nam2 ? console.log("yes") : console.log("no")
+    alert("Welcome to this website")
+    prompt("Please enter your name")
+
+//guess number
+let number = Math.floor(Math.random()*10)+1
+let att = 5
+alert("You have 5 attempts to guess the number")
+while(att != 0){
+    
+    let g_num = prompt("Please enter any number 1-10")
+    if(g_num<1 || g_num>10){
+        alert("Invalid number")
+        continue
+        att--
+}
+    if(att == 0){
+        alert("Game over")
+        break
+    }
+    if(number==g_num){
+    alert("Congratulations")
+    }
+    
+    else{alert("Try again")}
+}
+
+</script>
+</html>

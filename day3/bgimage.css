@@ -1,0 +1,7 @@
+div{
+    width: 500 px;
+    height: 500 px;
+    background-image: url("profile.jpeg");
+    background-color: brown;
+    background-size: contain;
+}

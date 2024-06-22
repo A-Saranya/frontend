@@ -1,0 +1,31 @@
+div{
+    width: 100 px;
+    height: 100 px;
+    display: inline;
+    
+}
+#one{
+    background-color: rebeccapurple;
+    position: static;
+}
+#two{
+    background-color: rgb(51, 153, 136);
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+#three{
+    background-color: rgb(153, 51, 144);
+    position: absolute;
+    right: 20px;
+
+}
+#four{
+    background-color: rgb(153, 51, 51);
+    position: fixed;
+    bottom: 0;
+}
+#five{
+    background-color: rgb(73, 153, 51);
+    position: sticky;
+}

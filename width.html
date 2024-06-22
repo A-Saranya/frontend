@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="cont">
+        <div id = "one">1</div>
+        <div id = "two">2</div>
+        <div id = "three">3</div>
+        <div id = "four">4</div>
+    </div>
+
+    <style>
+    #cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /*align-content: center;*/
+        /*align-item: center;*/
+        
+        height: 600px;
+        width: 600px;
+        border: 2px solid black;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in;
+        transition-delay: 1s;     
+        border: 1px solid black;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    
+    div:hover{
+        color: hotpink;
+        background-color: rgb(99, 186, 248);
+        transition: all;
+        transform: rotate(45deg);
+        transform: skew(20deg);
+        transform: scale(1);
+        transform: rotateY(90deg);
+        transform: scaleY
+        (2);
+        width: 400px;
+        height: 500px;
+    }
+    #one{
+       
+        background-color: rgb(47, 233, 68);
+     
+    }
+    #two{
+        
+        background-color: rgb(81, 71, 193);
+     
+    }
+    #three{
+        
+        background-color: rgb(117, 45, 131);
+    }
+    #four{
+        
+        background-color: rgb(239, 246, 40);
+     
+    }
+
+        
+    </style>
+</body>
+</html>
